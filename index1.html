@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>сайт</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      @keyframes textColorFade {
+  0% { color: black; }
+  50% { color: blue; }
+  100% { color: green; }
+}
+
+.animate-text {
+  animation: textColorFade 5s ease-in-out;
+}
+      .card-img-top {
+        object-fit: cover;
+        height: 270px; 
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="bg-info text-dark p-3 sticky-top">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="student-photo-wrapper" id="studentPhotoWrapper">
+          <img src="https://repository-images.githubusercontent.com/295254983/29bdb780-f5e0-11ea-9e62-f1df14445b46" alt="Logo" id="studentPhoto" class="me-2" width="70" height="50">
+          <p class="h5 mb-0">Logo</p>
+        </div>
+        <div>
+          <p class="mb-0">Группа ЭФБО-05-23</p>
+          <p class="mb-0">Мордвинкова Вероника Сергеевна</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="index2.html">Первый семестр</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Второй семестр</a></li>
+            <li class="nav-item"><a class="nav-link" href="index1.html">Услуги</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Авторизация</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-4">
+      <div class="row">
+          <div class="col-md-3 mb-4">
+              <div class="card" style="max-width: 80%;">
+                  <div class="card-header">
+                      <h3 class="h5 mb-0">Навигация</h3>
+                  </div>
+                  <div class="card-body">
+                      <div class="d-flex flex-column">
+                          <a href="сайт.html" class="text-decoration-none mb-2">Фронтенд</a>
+                          <a href="сайт.html" class="text-decoration-none">Бэкенд</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      <div class="col-md-9">
+        <!-- Контент -->
+        <div class="container">
+          <h1 id="main-header"  class="mb-4">Разработка веб-приложений</h1>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card" >
+                <img  src="https://apagency.ru/uploads/images/attache_850932921.jpg" class="card-img-top" alt="Сайт-визитка">
+                <div class="card-body text-center">
+                  <h2 class="card-title">Сайт-визитка</h2>
+                  <button class="btn btn-primary" onclick="openModal('Сайт-визитка')">Заказать</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="https://www.boot36.ru/images/gallery-img3.jpg" class="card-img-top" alt="Корпоративный сайт">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Корпоративный сайт</h5>
+                  <button class="btn btn-primary" onclick="openModal('Корпоративный сайт')">Заказать</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="https://lms-studio.ru/upload/iblock/9b9/j988hbet97tsx3qbh26uoz7fotvbfeoo.jpg" class="card-img-top" alt="Интернет-магазин">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Интернет-магазин</h5>
+                  <button class="btn btn-primary" onclick="openModal('Интернет-магазин')">Заказать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Описание -->
+          <h2 class="mt-5">Сайт-визитка</h2>
+          <p>Сайт-визитка представляет собой небольшой веб-ресурс. Он может состоять из одной или нескольких страниц, кратко описывающих основные направления деятельности компании.</p>
+          <h2>Корпоративный сайт</h2>
+          <p>Корпоративный сайт – это веб-сайт, созданный и поддерживаемый компанией для предоставления информации о своих продуктах и услугах, а также для создания и развития бренда.</p>
+          <h2>Интернет-магазин</h2>
+          <p>Интернет-магазин — форма электронной торговли, которая позволяет потребителям покупать товары или услуги с помощью веб-браузера.</p>
+        </div>
+        <div class="accordion mb-4" id="lectureAccordion">
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse1">
+                      1
+                  </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse show"
+                  data-bs-parent="#lectureAccordion">
+                  <div class="accordion-body">
+                  текст
+                  </div>
+              </div>
+          </div>
+
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse2">
+                      2
+                  </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse"
+                  data-bs-parent="#lectureAccordion">
+                  <div class="accordion-body">
+                  текст
+                  </div>
+              </div>
+          </div>
+          <div id="imageCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0"
+                    class="active"></button>
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://avatars.mds.yandex.net/i?id=a265e8a24637ddad024a8cd9ec346cdf_l-8483391-images-thumbs&n=13" class="d-block w-100" alt="1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://funik.ru/wp-content/uploads/2018/10/17478da42271207e1d86.jpg" class="d-block w-100" alt="2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/originals/7e/1b/fd/7e1bfd1191112533fe9872ef47398823.jpg" class="d-block w-100" alt="3">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="programm">
+            <h3>Рабочая программа</h3>
+            <div class="ratio ratio-16x9">
+                <object data="Мордвинкова_В_С_ЭФБО-05-23.pdf" type="application/pdf"
+                    class="w-100 border">
+                </object>
+            </div>
+        </div>
+        <div class="col-md-9">
+          <div class="card shadow">
+              <div class="card-body">
+                  <h1 class="mb-4">Первый семестр</h1>
+                  <div id="lectures" class="mb-4">
+                      <h3>Лекции</h3>
+                      <div class="table-responsive">
+                          <table class="table table-hover">
+                              <thead class="table-primary">
+                                  <tr>
+                                      <th>Номер</th>
+                                      <th>Тема</th>
+                                      <th>Посещение</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>1</td>
+                                      <td>мичровава</td>
+                                      <td><input type="checkbox" class="form-check-input" checked></td>
+                                  </tr>
+                                  <tr>
+                                      <td>2</td>
+                                      <td>ыСАЫуфыв</td>
+                                      <td><input type="checkbox" class="form-check-input"></td>
+                                  </tr>
+
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+
+        <!-- Модальное окно -->
+        <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Заказать</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form id="orderForm">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Как вас зовут:</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="например Иванов Иван Иванович" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Ваш e-mail:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="test@mail.ru" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Телефон:</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="country" class="form-label">Страна:</label>
+                    <select id="country" name="country" class="form-select">
+                      <option value="Россия">Россия</option>
+                      <option value="Украина">Украина</option>
+                      <option value="Беларусь">Беларусь</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="date" class="form-label">Дата:</label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="comments" class="form-label">Комментарий:</label>
+                    <textarea id="comments" name="comments" class="form-control"></textarea>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="agreement" name="agreement" required>
+                    <label class="form-check-label" for="agreement">Согласен на обработку моих персональных данных</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                </form>
+                <div class="alert alert-success mt-3" id="successMessage" style="display: none;">
+                  Ваша заявка успешно отправлена!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Скрипты -->
+        <script>
+          function openModal(serviceType) {
+            document.getElementById('modalTitle').innerText = serviceType;
+            var modal = new bootstrap.Modal(document.getElementById('orderModal'));
+            modal.show();
+          }
+
+          document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('successMessage').style.display = 'block';
+          });
+        </script>
+      </div>
+      </div>
+      <footer class="container-fluid bg-light mt-5 py-3">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="text-center flex-grow-1">
+            <p class="mb-0">© Мордвинкова Вероника Сергеевна, 2024</p>
+          </div>
+          <div>
+            <a href="https://t.me/gchvnbn" class="me-2"><img src="тг.png" width="50" height="40" alt="Telegram" class="rounded"></a>
+            <a href="https://vk.com/id308753472"><img src="вк.png" width="50" height="40" alt="VK" class="rounded"></a>
+          </div>
+        </div>
+      </footer>
+      <script src="script1.js" defer></script>
+  </body>
+</html>

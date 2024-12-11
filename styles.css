@@ -1,0 +1,356 @@
+@media (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+  .header, .menu {
+    flex-direction: column;
+  }
+  
+}
+
+/* Стили для планшетов */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header, .menu {
+    flex-direction: row;
+  }
+}
+
+/* Стили для десктопов */
+@media (min-width: 1025px) {
+  .header, .menu {
+    flex-direction: row;
+  }
+}
+
+/* Основные стили для страницы */
+body {
+    font-family: "Arimo", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fce9f8;
+    color: #333;
+    width: auto;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #bbf0f3;
+}
+.header{
+  position: sticky;
+  top: 0; /* Закрепляет меню вверху при прокрутке */
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  .surname{
+      justify-self: end;
+       
+  }
+  p{
+      color:rgb(0, 0, 0);
+      
+  }
+
+
+} 
+
+.scrollToTop {
+  position: fixed;
+  bottom: 10px; /* Расположение от нижней части экрана */
+  left: 2%; /* Центрирование по горизонтали */
+  transform: translateX(-50%); /* Сдвиг на половину ширины кнопки для точного центрирования */
+  background-color: rgba(247, 36, 68, 0.814); /* Полупрозрачный цвет фона */
+  color: white; /* Цвет текста */
+  padding: 10px 20px; /* Поля вокруг текста */
+  border-radius: 5px; /* Закругленные углы */
+  text-decoration: none; /* Убираем подчеркивание */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для кнопки */
+  transition: background-color 0.3s; /* Плавный переход цвета фона */
+  z-index: 1000; /* Убедитесь, что кнопка поверх других элементов */
+}
+
+.scrollToTop:hover {
+  background-color: rgb(98, 255, 142); /* Цвет фона при наведении */
+}
+.cat {
+  display: grid;
+  grid-template-columns:auto ;
+  margin: 10px;
+}
+.vert_align_top {
+  width: 20%;
+}
+.inline-block {
+  display: inline-block;
+}
+.round{
+  border-radius: 50%
+}
+.n{
+  background-color: #50a7ab;
+  position: fixed;
+  width: 100%;
+  height: 20px;
+ 
+}
+.text-block {
+    text-align: right;
+}
+
+  header {
+    background-color: #bbf0f3;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+  }
+  .align-right {
+    text-align: right;
+}
+
+
+@media (max-width: 600px) {
+  table {
+    display: block; /* Горизонтальная прокрутка */
+    overflow-x: auto;
+    white-space: nowrap; /* Запрет на перенос строк */
+    border-collapse: collapse; /* Убирает двойные границы */
+  }
+
+  th, td {
+    padding: 8px; /* Добавьте отступы для удобства чтения */
+    border-bottom: 1px solid #ddd; /* Границы ячеек */
+  }
+}
+
+
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+  }
+  tr:nth-child(even) {
+    background-color: rgb(165, 165, 165);
+}
+
+
+  .bordered th, .bordered td {
+    border: 1px solid black; /* Границы для таблиц */
+    
+  }
+  .bordered{
+    tr:hover{
+      background-color: #f8f549;
+    }
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #e2a9a9;
+  }
+  /* Выравнивание по правому краю */
+  .align-right {
+    text-align: right;
+  }
+  .align-center {
+    text-align: center;
+  }
+
+  /* Стили для таблиц без границ */
+  .no-border {
+    border: none;
+  }
+a:link {
+    color: #6b6bdf; /* Цвет ссылок */
+    padding: 2px; /* Поля вокруг текста */
+    text-decoration: none;
+  }
+  a:hover {
+    background: #94a6e7; /* Цвет фона под ссылкой */
+    color: #ffe; /* Цвет ссылки */
+  }
+  a:active {
+    color: #ff0000; 
+    background-color: #d1e7f8; 
+}
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+  }
+  .close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: darkred;
+    cursor: pointer;
+  }
+  button {
+    height: 42px;
+	border: none;
+	background: #e16eca;
+	color: #f2f2f2;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease; 
+  cursor: pointer;
+}
+  button:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 42px;
+    background: rgba(232, 193, 223, 0.823);
+    border-radius: 5px;
+    transition: all 2s ease;
+  }
+  button:hover:before {
+    width: 100%;
+  }
+  .success-message {
+    display: none;
+    color: green;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+    
+
+  input, button {
+    width: 100%; /* Полная ширина для мобильных устройств */
+  }
+  video, iframe {
+    max-width: 100%;
+  }
+
+
+  @media (min-width: 601px) {
+    input, button {
+      width: auto; /* Автоширина для больших экранов */
+      padding: 10px; /* Добавьте отступы для удобства */
+    }
+  }
+
+
+  header img {
+    vertical-align: middle;
+  }
+  img{
+    box-shadow: 3px 3px 0 #e269d2;
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+    max-width: 100%;
+    height: auto; /* Сохраняет пропорции изображений */
+  }
+  img:hover{
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+
+  nav.menu p {
+    margin-right: 20px;
+    color: rgba(110, 72, 164, 0.938);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+
+  nav.menu p:hover {
+    text-decoration: underline;
+    text-decoration: none;
+    
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+  }
+
+  /* Стили для контента */
+  h1 {
+    color: #333;
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h2 {
+    color: #ea5678;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  /* Стили для видео */
+  video {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Стили для футера */
+  footer {
+    background-color: #ed8cab;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  footer a {
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+  }
+
+  footer img {
+    vertical-align: middle;
+  }
+
+  /* Стили для навигации по странице */
+  nav.menu ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  nav.menu ul li {
+    margin: 5px 0;
+  }
+
+  nav.menu ul li a {
+    color: #ea5678;
+    text-decoration: none;
+  }
+
+  nav.menu ul li a :hover {
+    text-decoration: underline;
+    
+  }
+  .vert_align_top{
+	display: inline-block;
+	vertical-align: top;
+	background: #fce9f8;
+	}

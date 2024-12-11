@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>сайт</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="top"></div>
+    <header class = "header" >
+      <div>
+          <img  src="https://repository-images.githubusercontent.com/295254983/29bdb780-f5e0-11ea-9e62-f1df14445b46" width="70" height="50"/>
+          <p>Logo</p>
+      </div>  
+      <div class="surname">
+          <p id="paragraph">Группа ЭФБО-05-23</p>
+          <p>Мордвинкова Вероника Сергеевна</p>
+      </div>
+  </header>
+    <div class = "n">
+            <nav class="menu qwerty">
+              <a href="index.html">Главная</a>
+              <a href="index2.html">Первый семестр</a>
+              <a href="#">Второй семестр</a>
+              <a href="index1.html">Услуги</a>
+              <a href="#">Авторизация</a>
+            </nav>
+      </div>
+        <div class="cat" >
+            <div class="vert_align_top">
+              <nav class="menu">
+                <p >Навигация по странице</p>
+                <ul>
+                  <li><a href="#lec">Лекции</a></li>
+                  <li><a href="#pra">Практики</a></li>
+                  <li><a href="#adr">Адрес вуза</a></li>
+                  <li><a href="#rab">Рабочая программа</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="content">
+              <h1 id="title">Первый семестр</h1>
+                
+              <!-- Лекции -->
+              <h2 id="showLectures">Лекции</h2>
+              <button id="showLecturesBtn">Показать лекции</button>
+              <table id="lecturesTable" class="bordered" width="100%">
+                <tr>
+                  <th>Номер</th>
+                  <th>Тема</th>
+                  <th>Посещение</th>
+                </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Основы языка HTML</td>
+                    <td><input type="checkbox" checked></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Углубленное изучение HTML</td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Основы работы с CSS</td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Адаптивная верстка. Flexbox и Grid Layout</td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Bootstrap — работа с фреймворком</td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Основы языка JavaScript</td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Работа с DOM и событиями в JavaScript</td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Введение в GitHub и GitHub Pages</td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                </table>
+
+                <!-- Практики -->
+                <h2 id="pra">Практики</h2>
+                <button id="semesterButton">Посмотреть практики второго семестра</button>
+                <table class="bordered" width="100%">
+                  <tr>
+                    <th>Номер</th>
+                    <th>Тема</th>
+                    <th>Посещение</th>
+                    <th>Выполнение</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Основы языка HTML</td>
+                    <td><input type="checkbox" checked></td>
+                    <td><input type="checkbox" checked></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Формы и кнопки в HTML</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Таблицы и интерактивные элементы HTML</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Основы работы с CSS</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Работа с классами в CSS</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Работа с сетками и разметкой в HTML</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Адаптивная верстка</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Bootstrap</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Основы языка JavaScript</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                </table>
+
+                <!-- Яндекс карта -->
+                <h3 id="adr">Адрес</h3>
+                <p>Занятия проходят по адресу: <strong>просп. Вернадского, 78, стр. 4</strong></p>
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/mirea_rossiyskiy_tekhnologicheskiy_universitet/1084832794/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">МИРЭА, Российский технологический университет</a><a href="https://yandex.ru/maps/213/moscow/category/university/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Москве</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.482409%2C55.668446&mode=poi&poi%5Bpoint%5D=37.480225%2C55.669956&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1084832794&z=16.63" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                <!-- pdf файл -->
+                <h3 id="rab">Рабочая программа</h3>
+                <embed src="Мордвинкова_В_С_ЭФБО-05-23.pdf" width="560" height="600"/>
+              </div>
+
+          </div>
+      <footer><!-- низ страницы-->
+       <p > © Мордвинкова Вероника Сергеевна, 2024 <!--переход по картинке --><a href="https://t.me/gchvnbn"><img src="тг.png"style="float: right;" width="50" height="40" alt="Пример" class="round"></a><a href="https://vk.com/id308753472"><img src="вк.png" style="float: right;" width="50" height="40" alt="Пример" class="round"></a></p>  
+     </footer>
+     <a href="#top" class="scrollToTop">Вверх</a>
+  </body>
+</html>
